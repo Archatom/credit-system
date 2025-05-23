@@ -5,27 +5,27 @@ body {
 }
 
 .sidebar {
+    background-color: #343a40;
     min-height: 100vh;
-    background-color: #2c3e50;
     padding-top: 20px;
     position: sticky;
     top: 0;
 }
 
 .main-content {
-    padding: 30px;
+    padding: 20px;
 }
 
 .chart-container {
     position: relative;
-    margin: auto;
+    margin: 0 auto;
     height: 200px;
     width: 200px;
 }
 
 .small-chart {
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 150px;
 }
 
 .big-chart {
@@ -87,6 +87,43 @@ h2 {
 .alert {
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+.course-tabs {
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+.course-tabs .nav-link {
+    border-radius: 20px;
+    padding: 8px 20px;
+    border: none;
+    color: #fff;
+}
+
+.course-tabs .completed-tab {
+    background-color: #0d6efd;
+}
+
+.course-tabs .completed-tab:hover,
+.course-tabs .completed-tab:focus,
+.course-tabs .completed-tab.active {
+    background-color: #0a58ca;
+}
+
+.course-tabs .pending-tab {
+    background-color: #198754;
+}
+
+.course-tabs .pending-tab:hover,
+.course-tabs .pending-tab:focus,
+.course-tabs .pending-tab.active {
+    background-color: #157347;
+}
+
+/* 保持選項卡內容連接到選項卡 */
+#courseListTabContent {
+    border-radius: 0 0 5px 5px;
 }
 
 @media (max-width: 768px) {
